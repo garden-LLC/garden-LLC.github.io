@@ -7,7 +7,7 @@ layout: default
   <article class="post">
     <header>
       <div class="post_image">
-        <img src={{ "/assets/img/" | prepend: site.baseurl | append : page.img}} alt="{{page.title}}">
+        <img src={{ "/assets/img/" | prepend: site.baseurl | append:page.name | append: '/' | append: page.img}} alt="{{page.title}}">
       </div>
       <div class="post_description">
         <p class="post_meta">{{page.date | date: '%Y, %b %d'}}</p>
@@ -76,7 +76,7 @@ layout: default
           {% if post.title %}
             <a href="{{ post.url | prepend: site.baseurl }}"
               class="recent_item"
-              style="background-image: url( {{ "/assets/img/" | prepend: site.baseurl | append : post.img}} )">
+              style="background-image: url( {{ "/assets/img/" | prepend: site.baseurl | append:post.name | append: '/' | append : post.img}} )">
                 <span>{{ post.title }}</span>
             </a>
           {% endif %}
@@ -85,7 +85,7 @@ layout: default
     </div>
   </section> <!-- End Section Recent Box -->
   
-  {% include disqus.html %}
+<!--  {% include disqus.html %}-->
   
 </main> <!-- End Section Post Content -->
 
