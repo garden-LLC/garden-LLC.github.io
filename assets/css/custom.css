@@ -1,29 +1,6 @@
-.blog-img-lr div{
-  font-size: 1.2em;
-  width : 50%;
-  aspect-ratio: 1 / 1;
-  float:left;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.blog-img-lr img{
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-}
-
-.blog-img-lr::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
 .blog-img-td div{
     font-size: 1.2em;
-    width : 61.8%;
+    width : 90%;
     display:block;
     margin:1em auto 0;
     justify-content: center;
@@ -45,7 +22,7 @@
 
 .blog-img-only div{
     font-size: 1.2em;
-    width : 61.8%;
+    width : 90%;
     display:block;
     margin:1em auto 0;
     justify-content: center;

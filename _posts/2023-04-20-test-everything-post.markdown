@@ -26,18 +26,6 @@ paragraph test paragraph test paragraph test paragraph test paragraph test parag
 > 引用样式测试 blockquote 
 
 ## 图片展示样式测试 Image display test 
-
-### 左图右文 Left img right caption (class = "blog-img-lr")
-
-<div class = "blog-img-lr">
-    <div>
-        <img src= "{{ "/assets/img/" | prepend: site.baseurl | append:page.name}}/cover.jpg">
-    </div>
-    <div>
-        <legend>description description description description description description description
-            文字描述 文字描述 文字描述 文字描述 文字描述 文字描述 文字描述 文字描述 文字描述 文字描述 文字描述</legend>
-    </div>
-</div>
     
 ### 上图下文 Top img down caption (class = "blog-img-td")
 
