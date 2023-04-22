@@ -55,3 +55,29 @@ paragraph test paragraph test paragraph test paragraph test paragraph test parag
     </video>
 </div>
 
+## 滑动窗口
+
+<div class="rotating-banner">
+    <img src="{{ "/assets/img/" | prepend: site.baseurl }}cover1.jpg" alt="Image 1">
+    <img src="{{ "/assets/img/" | prepend: site.baseurl }}canyon.jpg" alt="Image 2">
+    <img src="{{ "/assets/img/" | prepend: site.baseurl }}sweden.jpg" alt="Image 3">
+    <img src="{{ "/assets/img/" | prepend: site.baseurl }}nevada.jpg" alt="Image 3">
+    <img src="{{ "/assets/img/" | prepend: site.baseurl }}himalayan.jpg" alt="Image 3">
+</div>
+
+<script>
+    $(document).ready(function() {
+        var initImg = $('.rotating-banner img:first-child');
+        initImg.addClass('active');
+        setInterval(function() {
+            var currentImg = $('.rotating-banner img.active');
+            var nextImg = currentImg.next();
+            if (nextImg.length == 0) {
+                nextImg = $('.rotating-banner img:first-child');
+            }
+            currentImg.removeClass('active');
+            nextImg.addClass('active');
+        }, 3000);
+    });
+</script>
+
