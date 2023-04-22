@@ -52,7 +52,7 @@
 .rotating-banner {
     position: relative;
     width: 100%;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1 / 0.8;
     overflow: hidden;
 }
 
