@@ -9,8 +9,11 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Banner settings
 video: mountains.mp4 # add banner video. Add your video file to the folder video
-banner-title: 伊甸之家 # add banner title
-banner-desc: Garden of Eden # add banner description
+banner-img: gof-banner.png
+banner-title: 伊甸 # add banner title
+banner-title-part2: 之家 # add banner title
+banner-desc: Garden  # add banner description
+banner-desc-part2: of Eden # add banner description
 company-eng-desc: "English English English English English English English English English English English
 English English English English English English English English English English English
 English English English English English English English English English English English"

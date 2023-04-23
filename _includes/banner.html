@@ -1,10 +1,14 @@
 
 <!--<section id="banner" data-vide-bg="{{site.baseurl}}/assets/video/{% if site.video %}{{ site.video }}{% endif %}" data-vide-options="posterType: jpg, loop: true, muted: false, position: 50% 50%">-->
-<section id="banner" data-vide-bg="{{site.baseurl}}/assets/img/canyon.jpg">
+<section id="banner" data-vide-bg="{{site.baseurl}}/assets/img/goe-banner.png">
   <div class="wrapper">
     <div class="content">
-      <h1 class="title">{% if site.banner-title %}{{ site.banner-title }}{% else %}Enjoy Freedom{% endif %}</h1>
-      <h2 class="sub_title">{% if site.banner-desc %}{{ site.banner-desc }}{% else %}{% endif %}</h2>
+      <h1 class="title">{% if site.banner-title %}{{ site.banner-title }}{% else %}伊甸{% endif %}
+          <span>{% if site.banner-title %}{{ site.banner-title-part2 }}{% else %}之家{% endif %}</span>
+      </h1>
+      <h2 class="sub_title">{% if site.banner-desc %}{{ site.banner-desc }}{% else %}Garden{% endif %}
+      <span>{% if site.banner-title %}{{ site.banner-desc-part2 }}{% else %}of Eden{% endif %}</span>
+      </h2>
     </div>
   </div>
 </section> <!-- End Section Banner -->

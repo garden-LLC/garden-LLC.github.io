@@ -82,13 +82,20 @@
     display:inline-block;
     overflow:auto;
     width:100%;
-    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#description > * {
+    animation-delay:0.5s;
+    animation-fill-mode: both;
+    animation-duration: 0.7s;
+    animation-name: fadeInDown;
+
 }
 
 #description div {
     font-size: 1.2em;
     width : 50%;
-    aspect-ratio: 16/9;
+/*    aspect-ratio: 16/9;*/
     float: left;
     display:flex;
     justify-content: center;
@@ -111,4 +118,20 @@
 
 #description div:nth-child(2){
     border-left: 2px solid #C0334A;
+}
+
+#banner .content .title{
+    color: #C0334A;
+}
+
+#banner .content .title span{
+    color: #FFFFFF;
+}
+
+#banner .content .sub_title span {
+    color: #C0334A;
+}
+
+.chapters .chapter img {
+    aspect-ratio: 1/0.618;
 }
