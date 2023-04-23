@@ -72,3 +72,43 @@
     z-index: 2;
     transition: opacity 1s ease-in-out;
 }
+
+#banner .content {
+    padding: 4rem 0 4rem 0;
+}
+
+
+#description {
+    display:inline-block;
+    overflow:auto;
+    width:100%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#description div {
+    font-size: 1.2em;
+    width : 50%;
+    aspect-ratio: 16/9;
+    float: left;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 15px 25px;
+    margin: 25px 0px 25px;
+
+}
+#description div p {
+    color: rgba(255,255,255,1);
+}
+#description div {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+#description div:nth-child(1):after{
+    border-right: 2px solid #C0334A;
+}
+
+#description div:nth-child(2){
+    border-left: 2px solid #C0334A;
+}
