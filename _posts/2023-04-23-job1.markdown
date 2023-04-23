@@ -8,8 +8,6 @@ description: You’ll find this post in your `_posts` directory. Go ahead and ed
 tag: [Travel, Blogging, Mountains]
 img-path: "/assets/img/2023-04-23-job1/"
 ---
-
-
 {% for image in site.static_files %}
 {% if image.path contains page.img-path %}
 <div class = "blog-img-only">
@@ -19,4 +17,5 @@ img-path: "/assets/img/2023-04-23-job1/"
 </div>
 {% endif %}
 {% endfor %}
+
 
