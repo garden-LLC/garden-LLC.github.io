@@ -38,3 +38,18 @@ for (i = 0; i < dots.length; i++) {
 slides[slideIndex-1].style.display = "block";
 dots[slideIndex-1].className += " active";
 }
+
+
+function zoomIn(img) {
+  var overlay = document.querySelector(".overlay");
+  var overlayImg = overlay.querySelector("img");
+
+  overlayImg.src = img.src;
+  overlay.style.display = "flex";
+}
+
+function zoomOut() {
+  var overlay = document.querySelector(".overlay");
+
+  overlay.style.display = "none";
+}
