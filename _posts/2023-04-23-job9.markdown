@@ -9,13 +9,25 @@ tag: [Travel, Blogging, Mountains]
 img-path: "/assets/img/2023-04-23-job9/"
 ---
 
-
-{% for image in site.static_files %}
-{% if image.path contains page.img-path %}
-<div class = "blog-img-only">
-    <div>
-        <img src="{{ image.path }}" alt="{{ image.name }}">
+<div class="slideshow-container">
+    {% for image in site.static_files %}
+    {% if image.path contains page.img-path %}
+    <div class="mySlides fade">
+        <img src="{{ image.path }}">
     </div>
+    {% endif %}
+    {% endfor %}
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)"><span>&#10094;</span></a>
+    <a class="next" onclick="plusSlides(1)"><span>&#10095;</span></a>
 </div>
-{% endif %}
-{% endfor %}
+
+<div class="slideshow-dots" >
+    {% assign n = 1%}
+    {% for image in site.static_files %}
+    {% if image.path contains page.img-path %}
+        <span class="dot" onclick="currentSlide({{ n }})"></span>
+        {% assign n = 1 | plus: 1%}
+    {% endif %}
+    {% endfor %}
+</div>
