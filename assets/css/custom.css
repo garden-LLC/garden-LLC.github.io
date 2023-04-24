@@ -167,7 +167,7 @@ img {vertical-align: middle;}
     top: 0%;
     width: 10%;
     height: 100%;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0.05);
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -177,9 +177,10 @@ img {vertical-align: middle;}
 
 .prev span, .next span{
     font-weight: bold;
-    font-size: 18px;
+    font-size: 4rem;
     display: block;
     margin: auto auto;
+    color:rgba(0,0,0,0.8);
 }
 
 /*dots style*/
@@ -191,12 +192,18 @@ img {vertical-align: middle;}
 /* Position the "next button" to the right */
 .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
+    border-radius: 0px 30px 30px 0px;
 }
+
+.prev {
+    left: 0;
+    border-radius: 30px 0px 0px 30px;
+}
+
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.3);
 }
 
 /* Caption text */
@@ -231,7 +238,7 @@ img {vertical-align: middle;}
     transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active.dot, .dot:hover {
     background-color: #717171;
 }
 
@@ -249,4 +256,49 @@ img {vertical-align: middle;}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
+}
+
+/*reponsive layout for describtion*/
+
+
+@media only screen and (max-width: 600px) {
+    #description {
+        display:inline-block;
+        overflow:auto;
+        width:100%;
+
+    }
+
+    #description div {
+        font-size: 1.2em;
+        width : 100%;
+/*        float: left;*/
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 25px 35px 0px;
+        margin: 0px 0px 0px 0px;
+
+    }
+    #description div p {
+        color: rgba(255,255,255,1);
+    }
+    #description div {
+        color: rgba(255, 255, 255, 0.2);
+    }
+
+    #description div:nth-child(1){
+        border-right: none;
+        border-bottom: 2px solid #C0334A;
+    }
+
+    #description div:nth-child(2){
+        border-left: none;
+        border-top: 2px solid #C0334A;
+    }
+
+    .main_header .logo {
+        font-size:1rem;
+    }
 }
