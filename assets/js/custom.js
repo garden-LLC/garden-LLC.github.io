@@ -43,9 +43,10 @@ dots[slideIndex-1].className += " active";
 function zoomIn(img) {
   var overlay = document.querySelector(".overlay");
   var overlayImg = overlay.querySelector("img");
-
+  var overlayMask = document.querySelector(".overlay-mask");
   overlayImg.src = img.src;
   overlay.style.display = "flex";
+  overlayMask.style.display = "flex";
 }
 
 function zoomOut() {

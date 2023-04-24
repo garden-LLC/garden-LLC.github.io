@@ -16,7 +16,7 @@ img-path: "/assets/img/2023-04-23-job9/"
         <img src="{{ image.path }}" onclick="zoomIn(this)" class="zoomable">
     </div>
     <div class="overlay" onclick="zoomOut()">
-        <img src="{{ image.path }}" onclick="zoomOut(this)" class="zoomable">
+        <img src="{{ image.path }}">
     </div>
     {% endif %}
     {% endfor %}
@@ -24,6 +24,7 @@ img-path: "/assets/img/2023-04-23-job9/"
     <a class="prev" onclick="plusSlides(-1)"><span>&#10094;</span></a>
     <a class="next" onclick="plusSlides(1)"><span>&#10095;</span></a>
 </div>
+
 
 <div class="slideshow-dots" >
     {% assign n = 1%}
