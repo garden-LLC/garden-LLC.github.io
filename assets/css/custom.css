@@ -260,6 +260,11 @@ img {vertical-align: middle;}
 
 /*reponsive layout for describtion*/
 
+@media only screen and (max-width: 960px) {
+    .prev span, .next span{
+        font-size: 2rem;
+    }
+}
 
 @media only screen and (max-width: 600px) {
     #description {
@@ -301,4 +306,10 @@ img {vertical-align: middle;}
     .main_header .logo {
         font-size:1rem;
     }
+
+    .prev span, .next span{
+
+        font-size: 1rem;
+    }
 }
+
