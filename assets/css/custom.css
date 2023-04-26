@@ -84,7 +84,7 @@
     width:100%;
 }
 
-#description > * {
+#description > *, .author {
     animation-delay:0.5s;
     animation-fill-mode: both;
     animation-duration: 0.7s;
@@ -92,19 +92,18 @@
 
 }
 
-#description div {
-    font-size: 1.2em;
-    width : 50%;
-/*    aspect-ratio: 16/9;*/
-    float: left;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px 15px 25px;
-    margin: 25px 0px 25px;
 
+#description div {
+   font-size: 1.2em;
+   width : 100%;
+   float: left;
+   display:flex;
+   justify-content: center;
+   text-align: center;
+   padding: 40px 100px 0px;
+   margin: 0px 0px 0px 0px;
 }
+
 #description div p {
     color: rgba(255,255,255,1);
 }
@@ -112,13 +111,22 @@
     color: rgba(255, 255, 255, 0.2);
 }
 
-#description div:nth-child(1):after{
-    border-right: 2px solid #C0334A;
+#description div:nth-child(1){
+    border-right: none;
+    border-bottom: 2px solid #C0334A;
 }
 
 #description div:nth-child(2){
-    border-left: 2px solid #C0334A;
+    border-left: none;
+    border-top: 2px solid #C0334A;
 }
+/*#description div:nth-child(1):after{*/
+/*    border-right: 2px solid #C0334A;*/
+/*}*/
+
+/*#description div:nth-child(2){*/
+/*    border-left: 2px solid #C0334A;*/
+/*}*/
 
 #banner .content .title{
     color: #C0334A;
@@ -248,6 +256,21 @@ img {vertical-align: middle;}
     animation-duration: 1.5s;
 }
 
+.author {
+    background-color: rgba(200,255,255,1);
+}
+
+.author .author_image {
+    float: left;
+    display: inline-block;
+    -webkit-border-radius: 50%;
+    border-radius: 0%;
+    width: 20%;
+    height: 20%;
+    overflow: hidden;
+    margin-right: 2rem;
+}
+
 @keyframes fade {
     from {opacity: .4}
   to {opacity: 1}
@@ -282,48 +305,13 @@ img {vertical-align: middle;}
 }
 
 @media only screen and (max-width: 600px) {
-    #description {
-        display:inline-block;
-        overflow:auto;
-        width:100%;
 
-    }
-
-    #description div {
-        font-size: 1.2em;
-        width : 100%;
-/*        float: left;*/
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 25px 35px 0px;
-        margin: 0px 0px 0px 0px;
-
-    }
-    #description div p {
-        color: rgba(255,255,255,1);
-    }
-    #description div {
-        color: rgba(255, 255, 255, 0.2);
-    }
-
-    #description div:nth-child(1){
-        border-right: none;
-        border-bottom: 2px solid #C0334A;
-    }
-
-    #description div:nth-child(2){
-        border-left: none;
-        border-top: 2px solid #C0334A;
-    }
 
     .main_header .logo {
         font-size:1rem;
     }
 
     .prev span, .next span{
-
         font-size: 1rem;
     }
 

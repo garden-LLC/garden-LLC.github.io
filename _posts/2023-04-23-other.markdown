@@ -1,0 +1,39 @@
+---
+layout: post
+title: Other
+name: 2023-04-23-other
+img: cover.jpg # Add image post (optional)
+date: 2023-04-23 14:41 +0400
+description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+tag: [Travel, Blogging, Mountains]
+img-path: "/assets/img/2023-04-23-other/"
+---
+
+
+<div class="slideshow-container">
+    {% for image in site.static_files %}
+    {% if image.path contains page.img-path %}
+    <div class="mySlides fade">
+        <img src="{{ image.path }}" onclick="zoomIn(this)" class="zoomable">
+    </div>
+    <div class="overlay" onclick="zoomOut()">
+        <img src="{{ image.path }}">
+    </div>
+    {% endif %}
+    {% endfor %}
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)"><span>&#10094;</span></a>
+    <a class="next" onclick="plusSlides(1)"><span>&#10095;</span></a>
+</div>
+
+
+<div class="slideshow-dots" >
+    {% assign n = 1%}
+    {% for image in site.static_files %}
+    {% if image.path contains page.img-path %}
+    <span class="dot" onclick="currentSlide({{ n }})"></span>
+    {% assign n = 1 | plus: 1%}
+    {% endif %}
+    {% endfor %}
+</div>
+
