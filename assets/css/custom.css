@@ -305,7 +305,9 @@ img {vertical-align: middle;}
 }
 
 @media only screen and (max-width: 600px) {
-
+    #description div {
+        padding: 20px 20px 0px;
+    }
 
     .main_header .logo {
         font-size:1rem;
