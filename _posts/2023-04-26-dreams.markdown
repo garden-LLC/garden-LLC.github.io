@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  dreams
+title: dream
 name: 2023-04-26-dreams
 img: cover.jpg # Add image post (optional)
-date: 2023-04-26 12:41 +0400
+date: 2023-04-26 14:41 +0400
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
 tag: [Travel, Blogging, Mountains]
 img-path: "/assets/img/2023-04-26-dreams/"
@@ -26,16 +26,15 @@ img-path: "/assets/img/2023-04-26-dreams/"
 </div>
 
 
-
 <div class="slideshow-dots" >
     {% assign n = 1%}
     {% for image in site.static_files %}
     {% if image.path contains page.img-path %}
-        <span class="dot" onclick="currentSlide({{ n }})"></span>
-        {% assign n = 1 | plus: 1%}
+    <span class="dot" onclick="currentSlide({{ n }})"></span>
+    {% assign n = 1 | plus: 1%}
     {% endif %}
     {% endfor %}
 </div>
 
 
-I had a dreams. I wanted to be a engineer but now I am a handyman. 理想很丰满，现实很骨感！
+I had a dream. I wanted to be an engineer but now I am a handyman.理想很丰满，现实很骨感！
