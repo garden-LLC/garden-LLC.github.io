@@ -358,4 +358,7 @@ img {vertical-align: middle;}
     position: fixed;
 }
 
+.chapters .chapter_inner .chapter_number, .chapters .chapter_inner .chapter_title {
+    background-color: rgba(0,0,0,0.4);
+}
 
