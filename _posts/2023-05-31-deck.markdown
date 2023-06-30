@@ -1,15 +1,4 @@
 ---
-layout: post
-<<<<<<<< HEAD:_posts/2023-06-01-deck.markdown
-title: new permit
-name: 2023-06-01-deck
-img: cover.jpg # Add image post (optional)
-date: 2023-06-01 14:41 +0400
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
-tag: [Travel, Blogging, Mountains]
-img-path: "/assets/img/2023-06-01-deck/"
----
-========
 title: deck
 name: 2023-05-31-drafts
 img: cover.jpg # Add image post (optional)
@@ -20,4 +9,3 @@ img-path: "/assets/img/2023-05-31-deck/"
 ---
 
 new drafts
->>>>>>>> 839f30c765be31afa78bdab5077836e255261d28:_posts/2023-05-31-deck.markdown
