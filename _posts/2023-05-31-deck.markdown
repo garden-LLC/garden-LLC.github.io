@@ -1,5 +1,5 @@
 ---
-layout： post
+layout: post
 title: deck
 name: 2023-05-31-drafts
 img: cover.jpg # Add image post (optional)
